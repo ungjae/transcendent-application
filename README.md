@@ -15,12 +15,13 @@ Before running the application, you'll need
 Do the following to deploy the app locally for demo purposes:
 
 1. Download or Git Clone the application to your local machine
-2. Go to the application directory (i.e. .../transcendent-application)
+2. Make sure Docker is running
+3. Go to the application directory (i.e. .../transcendent-application)
 
    ```bash
    C: ...> cd C:<...>/transcendent-application
    ```
-3. Run the **startup.sh** script
+4. Run the **startup.sh** script
 
    ```bash
    C: ...\transcendent-application> startup.sh
