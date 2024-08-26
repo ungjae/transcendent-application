@@ -32,7 +32,7 @@ Running the **startup.sh** script will:
 1. Start a PostgreSQL database in Docker
 2. Build and run a Dockerized Spring Boot backend with connection to the database in **1.**
 3. Build and run React frontend in Terminal
-   *exit react app in Terminal to trigger shutdown for **1** and **2**
+   *exit React app in Terminal to trigger shutdown for **1** and **2**
 
 ## Demo Snippets
 The app in action! The app takes all valid numbers.
