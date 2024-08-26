@@ -1,0 +1,28 @@
+services:
+  transcendent_postgres:
+    image: postgres:16
+    environment:
+      NODE_ENV: production
+      POSTGRES_DB: transcendent
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+  transcendent_backend:
+    image: backend
+    build:
+      context: /backend
+      dockerfile: /Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "8080:8080"
+  transcendent_frontend:
+    image: frontend
+    build:
+      context: /frontend
+      dockerfile: /Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
